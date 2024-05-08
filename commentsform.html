@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Paradise</title>
+    <link rel="stylesheet" href="commentsform.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="aboutus.html">About us</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="Student_details.html">Student Details</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="QUIZ.html">Quiz</a>
+        <a href="shopping.html">Shop</a>
+        <a href="commentsform.html">Feedback Form</a>
+        <a class="active" href="main_page.html">Home</a>
+      <div class="navbar-brand">
+            <img src= "Paradise Ceylon (1).jpg" alt="ceylon paradise" width="120" height="70">
+        </div>
+    
+    
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <h2 class="title">Feedback Form</h2>
+            </div>
+            <!-- Form -->
+            <form id="form" method="GET" action="displaycomments.html" name="myForm" onsubmit="return(validate());">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="feedback">Your Feedback</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="feedback" name="feedback" placeholder="Enter your feedback here..." style="height:100px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="task">Feedback Method</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="task" name="task">
+                            <option disabled selected value=""> -- Please Select -- </option>
+                            <option value="Phone">Phone</option>
+                            <option value="Website">Website</option>
+                            <option value="Social media">Social Media</option>
+                            <option value="Email">Email</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    // Form validation code will come here.
+    function validate() {
+        var fields = [];
+        if (document.myForm.name.value == "" || document.myForm.email.value == "" || document.myForm.feedback.value == "" || document.myForm.task.value == "") {
+            if (document.myForm.name.value == "") {
+                fields.push("Name");
+                // alert("Please provide your name!");
+                // document.myForm.name.focus();
+                // return false;
+            }
+            if (document.myForm.email.value == "") {
+                fields.push("Email");
+                // alert("Please provide your Email!");
+                // document.myForm.email.focus();
+                // return false;
+            }
+            if (document.myForm.feedback.value == "") {
+                fields.push("Your Feedback");
+                // alert("Please provide your feedback!.");
+                // document.myForm.feedback.focus();
+                // return false;
+            }
+            if (document.myForm.task.value == "") {
+                fields.push("Feedback Method");
+                // alert("Please provide your feedback method!");
+                // return false;
+            }
+            alert("Please provide " + fields);
+            return false;
+        } else {
+            localStorage.name = document.getElementById("name").value;
+            localStorage.email = document.getElementById("email").value;
+            localStorage.feedback = document.getElementById("feedback").value;
+            localStorage.task = document.getElementById("task").value;
+            document.getElementById("form").submit();
+        }
+        return (true);
+    }
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+      <!--Footer-->
+
+              <div class="container2">
+                <div class="row" style="text-align:left;">
+
+            <div class="span3 paddingtop-bottom">
+                <img src="Paradise Ceylon (1).jpg" alt="logo" width="160" height="80" class="logo">
+            </div>
+
+        <div class="row" style="text-align:left;">
+            <div class="span3 footerleft ">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>
+                    Agencies</h3>
+                <ul class="footer-ul">
+                    <!-- <li><a href="https://www.srilanka.travel/" target="_blank"> Sri Lanka Tourism Promotion Bureau</a>
+                    </li> -->
+                    <li><a href="https://www.sltda.gov.lk/" target="_blank"> Sri Lanka Tourism Development Authority</a>
+                    </li>
+                    <li><a href="https://meetinsrilanka.com/" target="_blank"> Sri Lanka Tourism Convention Bureau</a>
+                    </li>
+                    <li><a href="https://www.slithm.edu.lk/" target="_blank"> Sri Lanka Institute of Tourism &amp;
+                            Hotel Management </a></li>
+                    <li><a href="http://www.tourismmin.gov.lk/" target="_blank"> Ministry of Tourism </a></li>
+                </ul>
+            </div>
+
+            <div class="span3 paddingtop-bottom">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>
+                    Partners</h3>
+                <ul class="footer-ul">
+                    <li><a href="https://www.srilankan.com/" target="_blank">SriLankan Airlines</a></li>
+                    <li><a href="https://www.airport.lk/" target="_blank"> Sri Lanka Airport &amp; Aviation Services</a>
+                    </li>
+                    <li><a href="https://www.immigration.gov.lk/" target="_blank"> Department of Immigration and
+                            Emigration</a></li>
+                            <li><a href="https://eta.gov.lk/slvisa/" target="_blank">Electronic Travel Authorization System</a></li>
+
+                </ul>
+                <br>
+                
+            </div>
+
+            <div class="span3 paddingtop-bottom">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Industry</span>
+                    Associations</h3>
+                <ul class="footer-ul">
+                <li><a href="https://www.thasl.lk" target="_blank">Tourist Hotels Association of Sri Lanka</a></li>
+                <li><a href="https://www.slaito.com/" target="_blank"> Sri Lanka Association of Inbound Tour Operators</a></li>
+                
+               
+                </ul>
+                <br>
+                
+                </div>
+
+            <div class="span3 paddingtop-bottom">
+                <div>
+                    <h3 class="heading7"><span
+                                style="font-family: Helvetica Neue LT Std;font-weight:100;">About the</span> Site</h3>
+                    <ul class="footer-ul">
+                        <li><a href="" target="_blank">Terms of Use</a>
+                        </li>
+                        <li><a href="" target="_blank">Subscribe</a></li>
+                        <li><a href="" target="_blank">Contact Us</a></li>
+                        <li><a href="" target="_blank">Investor Relations Unit</a></li>
+                        <li><a href="" target="_blank">Complaints</a></li>
+                        <li><a href="" target="_blank">Tenders</a></li>
+                        <li><a href="" target="_blank">Important Notices</a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+
+</html>

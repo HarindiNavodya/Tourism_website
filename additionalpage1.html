@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wild life</title>
+	    <link rel="stylesheet" href="additionalpage1.css">
+</head>
+
+
+<body>
+    <!--add navigation bar-->
+    <div class="navbar">
+		<a href="aboutus.html">About us</a>
+		<a href="sitemap.html">Sitemap</a>
+		<a href="Student_details.html">Student Details</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="QUIZ.html">Quiz</a>
+		<a href="shopping.html">Shop</a>
+		<a href="commentsform.html">Feedback Form</a>
+		<a class="active" href="main_page.html">Home</a>
+	  <div class="navbar-brand">
+			<img src= "Paradise Ceylon (1).jpg" alt="ceylon paradise" width="120" height="70">
+		</div>
+	
+	
+	</div>
+	
+	<!--main content of the page-->
+      
+  <br>
+  <br>
+  <br>      
+  <br>
+  <br>
+  <br>
+  <h1><b>Wild Life</b></h1>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="wild4.jpg" alt="wild4">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="wild5.jpg" alt="wild5">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="wild6.jpg" alt="wild6">
+		</div>
+
+	</div>
+
+  <br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div>
+	<br>
+	<div class="container1">
+		<p>Sri Lanka teems with wildlife.the country's national parks are home to all manner of amazing creatures. 
+		Here's a guide to what you can expect to see during your visit
+		</p>
+		<ul>
+			<li>yala national park</li>
+			<li>Udawalawe national park</li>
+			<li>Minneriya national park</li>
+			<li>Wilpattu national park</li>
+			<li>Horton Plains National Park</li>
+			<li>Sinharaja Forest Reserve</li>
+			
+			
+		</ul>
+		<p>Sri Lanka teems with wildlife. From great herds of trumpeting Asian elephants to elusive leopards and strange looking sloth bears, 
+		the country's national parks are home to all manner of amazing creatures.</p>
+		<p>Like many islands, Sri Lanka boasts a high number of endemic species, animals and plants found nowhere else on Earth. The country 
+		is also regarded as one of the world's top five hotspots for biodiversity, testament to the sheer number of species which call the tear 
+		drop isle home. </p>
+		<p>Here's a guide to what you can expect to see during your visit.</p>
+	</div>
+	<br>
+	
+	<div class="container">
+		<div class="row">
+		
+			  <div class="thumb-box">
+			  <a href="">
+				<img src="yala.jpg" alt="yala">
+				<span class="overlay-box">
+						
+				<span class="main-title">Yala National Park</span>
+				<span class="description">The most famous national park in Sri Lanka, Yala is home to 215 bird species and 44 mammal species. 
+				Expect to see roaming elephants, herds of sambar deer, 
+				crocodiles and buffalo. What’s more, the park has the highest concentration of leopards in the world.</span>
+				</span>
+			  </a>
+			  </div>
+
+			  <div class="thumb-box">
+			  <a href="">
+				  <img src="udavalava.jpg" alt="udavalava">
+				 <span class="overlay-box">
+						
+				<span class="main-title">Udawalawe national park</span>
+				<span class="description">Framed by the soaring Central Highlands, 
+				Udawalawe is one of the best places in the world to see wild elephants.</span>
+				  </span>
+			  </a>
+			  </div>
+
+			  <div class="thumb-box">
+			  <a href="">
+				  <img src="minneriya.jpg" alt="mineriya">
+				<span class="overlay-box">
+						
+				<span class="main-title">Minneriya national park</span>
+				<span class="description">As part of Sri Lanka’s elephant corridor,
+				 large numbers of elephants migrate across the country to Minneriya every year.</span>
+				  </span>
+			  </a>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<br>
+	
+	<div class="container">
+	   <div class="row">
+			<div class="thumb-box">
+			  <a href="">
+				<img src="willpaththu.jpg" alt="wilpathu">
+				 <span class="overlay-box">
+						
+				<span class="main-title">Willpaththu National Park</span>
+				<span class="description">Translating to ‘natural lakes’ in Sinhala,
+				 Wilpattu’s most prominent feature is its wetlands.</span>
+				  </span>
+			  </a>
+			</div>
+
+			<div class="thumb-box">
+			  <a href="">
+				  <img src="hortain.jpg" alt="hortain">
+				 <span class="overlay-box">
+						
+				<span class="main-title">Horton Plains National Park</span>
+				<span class="description">set over 2,000 metres above sea level,
+				 the Horton Plains feel a world apart from the rest of Sri Lanka.</span>
+				  </span>
+			  </a>
+			</div>
+
+			<div class="thumb-box">
+			  <a href="">
+				  <img src="sinharaja.jpg" alt="kandy">
+				<span class="overlay-box">
+						
+				<span class="main-title">Sinharaja Forest Reserve</span>
+				<span class="description">orld Heritage-listed Sinharaja Forest Reserve is a biodiversity hotspot. 
+				Containing Sri Lanka’s last area of primary tropical rainforest, it’s home to over 50% of the country’s endemic species of mammals and butterflies, 
+				as well as many types of reptile, insect and rare amphibians.</span>
+				  </span>
+			  </a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+	
+	<a href="pageeditor1.html"> page developer </a>
+<br>
+<br>
+<br>
+ <!--Footer-->
+
+<div class="container2">
+    <div class="row" style="text-align:left;">
+
+      <div class="span3 paddingtop-bottom">
+        <img src="logo.jpg" alt="logo" width="160" height="80" class="logo">
+      </div>
+
+      <div class="row" style="text-align:left;">
+
+        <div class="span3 footerleft ">
+
+          <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>Agencies</h3>
+
+          <ul class="footer-ul">
+            
+            <li><a href="https://www.sltda.gov.lk/" target="_blank"> Sri Lanka Tourism Development Authority</a></li>
+            <li><a href="https://meetinsrilanka.com/" target="_blank"> Sri Lanka Tourism Convention Bureau</a></li>
+            <li><a href="https://www.slithm.edu.lk/" target="_blank"> Sri Lanka Institute of Tourism &amp; Hotel Management </a></li>
+            <li><a href="http://www.tourismmin.gov.lk/" target="_blank"> Ministry of Tourism </a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+
+        <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>Partners</h3>
+
+        <ul class="footer-ul">
+
+            <li><a href="https://www.srilankan.com/" target="_blank">SriLankan Airlines</a></li>
+            <li><a href="https://www.airport.lk/" target="_blank"> Sri Lanka Airport &amp; Aviation Services</a></li>
+            <li><a href="https://www.immigration.gov.lk/" target="_blank"> Department of Immigration and Emigration</a></li>
+            <li><a href="https://eta.gov.lk/slvisa/" target="_blank">Electronic Travel Authorization System</a></li>
+
+        </ul>
+        <br>
+        
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+
+        <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Industry</span> Associations</h3>
+
+        <ul class="footer-ul">
+
+          <li><a href="https://www.thasl.lk" target="_blank">Tourist Hotels Association of Sri Lanka</a></li>
+          <li><a href="https://www.slaito.com/" target="_blank"> Sri Lanka Association of Inbound Tour Operators</a></li>
+
+        </ul>
+        <br>
+        
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+        <div>
+            <h3 class="heading7"><span
+                        style="font-family: Helvetica Neue LT Std;font-weight:100;">About the</span> Site</h3>
+            <ul class="footer-ul">
+                <li><a href="https://www.srilanka.travel/terms-and-conditions" target="_blank">Terms of Use</a>
+                </li>
+                <li><a href="" target="_blank">Site Map</a></li>
+                <li><a href="" target="_blank">Subscribe</a></li>
+                <li><a href="" target="_blank">Contact Us</a></li>
+                <li><a href="" target="_blank">Investor Relations Unit</a></li>
+                <li><a href="" target="_blank">Complaints</a></li>
+                <li><a href="" target="_blank">Tenders</a></li>
+                <li><a href="" target="_blank">Important Notices</a></li>
+            </ul>
+            <br>
+        </div>
+      </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+scrollFunction()
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+ 
+  
+</body>
+</html>
