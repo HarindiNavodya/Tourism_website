@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Paradise</title>
+    <link rel="stylesheet" href="main_page.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="aboutus.html">About us</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="Student_details.html">Student Details</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="QUIZ.html">Quiz</a>
+        <a href="shopping.html">Shop</a>
+        <a href="commentsform.html">Feedback Form</a>
+        <a class="active" href="main_page.html">Home</a>
+      <div class="navbar-brand">
+            <img src= "Paradise Ceylon (1).jpg" alt="ceylon paradise" width="120" height="70">
+        </div>
+
+
+    </div>
+
+    <div class="container1">
+        
+        <div class="centered"><i>Welcome to Ceylon Paradise</i></div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="card card1">
+                <h1>Eco Tourism</h1>
+                <a href="">
+                    <img src="Ecotourism-in-Sri-Lanka.jpeg" width="200" height="200" alt="ecotourism">
+                </a>
+            </div>
+            <div class="card card2">
+                <h1>Cultural Heritage</h1>
+                <a href="">
+                    <img src="3-week-sri-lanka-itinerary-2022-sigiriya.jpg" width="200" height="200" alt="culturalheritage">
+                </a>
+            </div>
+            <div class="card card3">
+                <h1>Adventure Tourism</h1>
+                <a href="">
+                    <img src="images.jpeg" width="200" height="200" alt="adventuretourism">
+                </a>
+            </div>
+            <div class="card card4">
+                <h1>Wildlife</h1>
+                <a href="">
+                    <img src="Sri-Lanka-elephants.jpeg" width="200" height="200" alt="wildlife">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="shutterstock_555198655_20191120110432.jpeg" alt="image1">
+</div>
+
+<div class="mySlides fade">
+  <img src="Sinharaja-Rainforest-Day-Trek-from-Colombo.jpeg" alt="image2">
+</div>
+
+<div class="mySlides fade">
+  <img src="Add-a-heading-56.jpg" alt="image3">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+        <div class="container2">
+                <div class="row" style="text-align:left;">
+
+            <div class="span3 paddingtop-bottom">
+                <img src="Paradise Ceylon (1).jpg" alt="logo" width="160" height="80" class="logo">
+            </div>
+
+        <div class="row" style="text-align:left;">
+            <div class="span3 footerleft ">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>
+                    Agencies</h3>
+                <ul class="footer-ul">
+                    <!-- <li><a href="https://www.srilanka.travel/" target="_blank"> Sri Lanka Tourism Promotion Bureau</a>
+                    </li> -->
+                    <li><a href="https://www.sltda.gov.lk/" target="_blank"> Sri Lanka Tourism Development Authority</a>
+                    </li>
+                    <li><a href="https://meetinsrilanka.com/" target="_blank"> Sri Lanka Tourism Convention Bureau</a>
+                    </li>
+                    <li><a href="https://www.slithm.edu.lk/" target="_blank"> Sri Lanka Institute of Tourism &amp;
+                            Hotel Management </a></li>
+                    <li><a href="http://www.tourismmin.gov.lk/" target="_blank"> Ministry of Tourism </a></li>
+                </ul>
+            </div>
+
+            <div class="span3 paddingtop-bottom">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>
+                    Partners</h3>
+                <ul class="footer-ul">
+                    <li><a href="https://www.srilankan.com/" target="_blank">SriLankan Airlines</a></li>
+                    <li><a href="https://www.airport.lk/" target="_blank"> Sri Lanka Airport &amp; Aviation Services</a>
+                    </li>
+                    <li><a href="https://www.immigration.gov.lk/" target="_blank"> Department of Immigration and
+                            Emigration</a></li>
+                            <li><a href="https://eta.gov.lk/slvisa/" target="_blank">Electronic Travel Authorization System</a></li>
+
+                </ul>
+                <br>
+                
+            </div>
+
+            <div class="span3 paddingtop-bottom">
+                <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Industry</span>
+                    Associations</h3>
+                <ul class="footer-ul">
+                <li><a href="https://www.thasl.lk" target="_blank">Tourist Hotels Association of Sri Lanka</a></li>
+                <li><a href="https://www.slaito.com/" target="_blank"> Sri Lanka Association of Inbound Tour Operators</a></li>
+                </ul>
+                <br>
+                
+            </div>
+
+            <div class="span3 paddingtop-bottom">
+                    <h3 class="heading7"><span
+                                style="font-family: Helvetica Neue LT Std;font-weight:100;">About the</span> Site</h3>
+                    <ul class="footer-ul">
+                        <li><a href="" target="_blank">Terms of Use</a>
+                        </li>
+                        <li><a href="" target="_blank">Subscribe</a></li>
+                        <li><a href="" target="_blank">Contact Us</a></li>
+                        <li><a href="" target="_blank">Investor Relations Unit</a></li>
+                        <li><a href="" target="_blank">Complaints</a></li>
+                        <li><a href="" target="_blank">Tenders</a></li>
+                        <li><a href="" target="_blank">Important Notices</a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+</body>
+
+</html>

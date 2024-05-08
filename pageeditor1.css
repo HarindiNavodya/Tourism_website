@@ -1,0 +1,56 @@
+.container{
+text-align:center;
+}
+h3{
+background-color:#a7d2a6;
+}
+.content2{
+background-color:#a7d2a6;
+}
+body {
+    font-family: initial; 
+    margin:0;
+}
+
+/* Navigation bar*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #2F603A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+    z-index: 9999;
+
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: initial;
+}
+
+.navbar a:hover {
+    background: #50CE76;
+    color: black;
+}
+.navbar .navbar-brand {
+    float: left;
+    display: block;
+    color: rgb(48, 67, 45);
+    text-align: center;
+    padding: 7.7px 12px;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+    background: rgb(48, 67, 45);
+    color: black;
+}
+

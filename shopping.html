@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>shopping cart and checkout form</title>
+
+<link rel="stylesheet" href="shopping.css">
+</head>
+
+<body>
+<!--add navigation bar-->
+<div class="navbar">
+    <a href="aboutus.html">About us</a>
+    <a href="sitemap.html">Sitemap</a>
+    <a href="Student_details.html">Student Details</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="QUIZ.html">Quiz</a>
+    <a href="shopping.html">Shop</a>
+    <a href="commentsform.html">Feedback Form</a>
+    <a class="active" href="main_page.html">Home</a>
+  <div class="navbar-brand">
+        <img src= "Paradise Ceylon (1).jpg" alt="ceylon paradise" width="120" height="70">
+    </div>
+
+
+</div>
+  
+<div class="topic">
+<h1>Ceylon pride souvenir shop</h1>
+</div>
+
+<!--shopping cart-->
+<div class="container">
+	<form>
+		<div class="product">
+		<div class="description">Elephant statue</div>
+		<div class="price">Rs 2500.00</div>
+		<img id="elephant" src="elephant.jpeg" alt="Elephant statue" class="image">
+        <select name="Nb of elephant statue" id="elephantQ">
+		<option value="0">0</option> 
+		<option value="1">1</option> 
+		<option value="2">2</option> 
+		<option value="3">3</option> 
+		<option value="4">4</option> 
+		<option value="5">5</option> 
+		</select>
+		<p class="imgclick">click on image</p>
+		</div>
+		
+		<div class="product">
+		<div class="description">Leather travelling bag</div>
+		<div class="price">Rs 11000.00</div>
+		<img id="bag" src="bag1.jpeg" alt="Leather travelling bag">
+        <select name="Nb of bags " id="bagQ">
+		<option value="0">0</option> 
+		<option value="1">1</option> 
+		<option value="2">2</option> 
+		<option value="3">3</option>
+		<option value="4">4</option> 
+		<option value="5">5</option> 
+		</select>
+		<p class="imgclick">click on image</p>
+		</div>
+		
+		<div class="product">
+		<div class="description">Jewelry Box</div>
+		<div class="price">Rs 1000.00</div>
+		<img id="jewelry" src="jewellerybox.jpg" alt="Jewelry Box">
+        <select name="Nb of jewelry Boxes" id="jewelryQ">
+		<option value="0">0</option> 
+		<option value="1">1</option> 
+		<option value="2">2</option> 
+		<option value="3">3</option> 
+		<option value="4">4</option> 
+		<option value="5">5</option> 
+		</select>
+		<p class="imgclick">click on image</p>
+		</div>
+		
+		<div class="product">
+		<div class="description">Tea Box</div>
+		<div class="price">Rs 750.00</div>
+		<img id="tea" src="tea.jpeg" alt="tea Box">
+        <select name="Nb of tea Boxes" id="teaQ">
+		<option value="0">0</option> 
+		<option value="1">1</option> 
+		<option value="2">2</option> 
+		<option value="3">3</option> 
+		<option value="4">4</option> 
+		<option value="5">5</option> 
+		</select>
+		<p class="imgclick">click on image</p>
+		</div>
+		
+		<div class="labelOrder">Your Order:
+		<div id="orderDescription">Basket</div>
+		<div class="product" id="order">
+		<p style="font-weight: bold;">List: </p>
+		<div id="elephantOrder" class="orderedItem">
+		<span id="elephantQuantity">0</span> x Elephant statues = 
+		<span id="elephantTotal" class="priceInOrder">0</span>
+		</div>
+		<div id="bagOrder" class="orderedItem">
+		<span id="bagQuantity">0</span> x bags = 
+		<span id="bagTotal" class="priceInOrder">0</span>
+		</div>
+		<div id="jewelryOrder" class="orderedItem">
+		<span id="jewelryQuantity">0</span> x jewellery boxes = 
+		<span id="jewelryTotal" class="priceInOrder">0</span>
+		</div> 
+		<div id="teaOrder" class="orderedItem">
+		<span id="teaQuantity">0</span> x tea boxes = 
+		<span id="teaTotal" class="priceInOrder">0</span>
+		</div>  
+		<p style="font-weight: bold;">Delivery option:</p> 
+		<div id="deliveryOrder" class="orderedItem">Express delivery = 
+		<span id="giftTotal" class="priceInOrder">0</span></div>
+		<p style="font-weight: bold;">Total: </p><br>
+		£<span id="orderTotal" class="priceInOrder">0</span>
+		</div>
+		</div>
+		
+		
+		<div id="detailsForm">
+
+		<label for="name">Name: </label>
+		<input type="text" id="name" name="Name">
+		<label for="email">Contact:</label>
+		<input type="email" id="email" name="email">
+
+		<span class="spacing">
+		<label for="giftOption">Express delivery </label> 
+		<input type="checkbox" name="gift" id="giftOption">
+		</span><br><br>
+
+		<button type="button" id="placeOrder" > Place your order </button>
+		<button type="button" id="resetOrder">Clear your order</button>
+
+		</div>
+	</form>
+</div>
+
+<!--checkout form-->
+
+
+
+  
+<div class="container3" id="check" >
+  <p id="h">checkout form</p>
+  <form>
+    <div class="col">
+			
+		<h3>Order details</h3>
+		<p> Description : make a paymont </p>
+		<label for="amount"> Amount</label>
+		<input type="text" id="amount" name="amount">
+		<h3>Billing Address</h3>
+		<label for="fname"> Full Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+		<label for="email1"> Email</label>
+		<input type="text" id="email1" name="email1" placeholder="john@example.com">
+		<label for="adr"> Address</label>
+		<input type="text" id="adr" name="address" placeholder="542 W. 15th Street" >
+		<label for="city"> City</label>
+		<input type="text" id="city" name="city" placeholder="New York" >
+		<label for="state">State</label>
+		<input type="text" id="state" name="state" placeholder="NY" >
+		<label for="zip">Zip</label>
+		<input type="number" id="zip" name="zip" placeholder="10001" >
+		  
+		
+	</div>
+
+	<div class="col">
+		<h3>Payment</h3>
+		
+		<label for="cname">Name on Card</label>
+		<input type="text" id="cname" name="cardname" placeholder="John More Doe"  >
+		<label for="ccnum">Credit card number</label>
+		<input type="number" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"  >
+		<label for="expmonth">Exp Month</label>
+		<input type="text" id="expmonth" name="expmonth" placeholder="September" >
+		<label for="expyear">Exp Year</label>
+		<input type="text" id="expyear" name="expyear" placeholder="2018" >
+		<label for="cvv" >CVV</label>
+		<input type="number" id="cvv" name="cvv" placeholder="352">
+		  
+		
+	</div>
+	  
+	<label>
+	  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+	</label>
+	<button type="button" id="makepaymont" onclick="validate();" > Make paymont </button>
+	<br>
+	<br>
+	<a href="pageeditor1.html"> page developer </a>
+  </form>
+</div>
+
+<!--Footer-->
+
+<div class="container2">
+    <div class="row" style="text-align:left;">
+
+      <div class="span3 paddingtop-bottom">
+        <img src="logo.jpg" alt="logo" width="160" height="80" class="logo">
+      </div>
+
+      <div class="row" style="text-align:left;">
+
+        <div class="span3 footerleft ">
+
+          <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>Agencies</h3>
+
+          <ul class="footer-ul">
+            
+            <li><a href="https://www.sltda.gov.lk/" target="_blank"> Sri Lanka Tourism Development Authority</a></li>
+            <li><a href="https://meetinsrilanka.com/" target="_blank"> Sri Lanka Tourism Convention Bureau</a></li>
+            <li><a href="https://www.slithm.edu.lk/" target="_blank"> Sri Lanka Institute of Tourism &amp; Hotel Management </a></li>
+            <li><a href="http://www.tourismmin.gov.lk/" target="_blank"> Ministry of Tourism </a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+
+        <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Our</span>Partners</h3>
+
+        <ul class="footer-ul">
+
+            <li><a href="https://www.srilankan.com/" target="_blank">SriLankan Airlines</a></li>
+            <li><a href="https://www.airport.lk/" target="_blank"> Sri Lanka Airport &amp; Aviation Services</a></li>
+            <li><a href="https://www.immigration.gov.lk/" target="_blank"> Department of Immigration and Emigration</a></li>
+            <li><a href="https://eta.gov.lk/slvisa/" target="_blank">Electronic Travel Authorization System</a></li>
+
+        </ul>
+        <br>
+        
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+
+        <h3 class="heading7"><span style="font-family: Helvetica Neue LT Std;font-weight:100;">Industry</span> Associations</h3>
+
+        <ul class="footer-ul">
+
+          <li><a href="https://www.thasl.lk" target="_blank">Tourist Hotels Association of Sri Lanka</a></li>
+          <li><a href="https://www.slaito.com/" target="_blank"> Sri Lanka Association of Inbound Tour Operators</a></li>
+
+        </ul>
+        <br>
+        
+      </div>
+
+      <div class="span3 paddingtop-bottom">
+        <div>
+            <h3 class="heading7"><span
+                        style="font-family: Helvetica Neue LT Std;font-weight:100;">About the</span> Site</h3>
+            <ul class="footer-ul">
+                <li><a href="https://www.srilanka.travel/terms-and-conditions" target="_blank">Terms of Use</a>
+                </li>
+                <li><a href="" target="_blank">Site Map</a></li>
+                <li><a href="" target="_blank">Subscribe</a></li>
+                <li><a href="" target="_blank">Contact Us</a></li>
+                <li><a href="" target="_blank">Investor Relations Unit</a></li>
+                <li><a href="" target="_blank">Complaints</a></li>
+                <li><a href="" target="_blank">Tenders</a></li>
+                <li><a href="" target="_blank">Important Notices</a></li>
+            </ul>
+            <br>
+        </div>
+      </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+scrollFunction()
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<script>
+  var elephantAmount = 0, 
+     bagAmount = 0,
+    jewelryAmount = 0,
+	teaAmount=0,
+    deliveryValue = 0, 
+    totalAmount = 0,
+    totalValue = 0,
+    giftValue = 0,
+    giftOption = 0;
+	
+	
+document.getElementById("placeOrder").addEventListener( "click", function() {
+placeMyOrder(this.form);
+showInput(this.form);
+});
+document.getElementById("resetOrder").addEventListener( "click", function() {
+this.form.reset();
+updateOrder(this.form);
+});
+document.getElementById("elephantQ").addEventListener( "change", function() {
+updateOrder(this.form);
+});
+document.getElementById("bagQ").addEventListener( "change", function() {
+updateOrder(this.form);
+});
+document.getElementById("jewelryQ").addEventListener( "change", function() {
+updateOrder(this.form);
+});
+document.getElementById("teaQ").addEventListener( "change", function() {
+updateOrder(this.form);
+});
+document.getElementById("giftOption").addEventListener( "click", function() {
+updateOrder(this.form);
+});
+
+//when user click on the image it shows a discription of the product.
+document.getElementById("elephant").addEventListener("click", function() {
+alert("modern elephant shaped statue crafted by sri lankan Artisans. And decorated with beads and sequins.");
+});
+document.getElementById("bag").addEventListener("click", function() {
+alert("Exquisite intricately carved Sri Lankan leather with traditional elephant and swan motifs is durable and can be gifted too. ");
+});
+document.getElementById("jewelry").addEventListener("click", function() {
+alert("hand carved jewelry box in fragrant wood.");
+});
+document.getElementById("tea").addEventListener("click", function() {
+alert("Pure Ceylon blacktea.contains 20 tea bags.");
+});
+
+
+function getRadioValue( radioArray ) {
+ var i;
+ for ( i = 0; i < radioArray.length; i++ ) {
+ if ( radioArray[ i ].checked ) { 
+ return radioArray[ i ].value;
+ }
+ }
+ return "";
+}
+function getSelectedValue( selectList ) {
+ return selectList[ selectList.selectedIndex ].value;
+}
+function getSelectedText( selectList ) {
+ return selectList.options[ selectList.selectedIndex ].text;
+}
+
+//update the order
+function updateOrder(formRef) {
+var elephantPrice = 2500;
+var bagPrice = 11000;
+var jewelryPrice = 1000;
+var teaPrice=750;
+var giftPrice = 200;
+var totalPrice = 0;
+
+if ( document.getElementById("giftOption").checked ) {
+giftOption = 1;
+} else {
+giftOption = 0;
+}
+
+elephantAmount = parseInt(( document.getElementById( "elephantQ" )).value);
+bagAmount = parseInt(( document.getElementById( "bagQ" )).value);
+jewelryAmount = parseInt(( document.getElementById( "jewelryQ" )).value);
+teaAmount = parseInt(( document.getElementById( "teaQ" )).value);
+//shows product quantities
+document.getElementById("elephantQuantity").innerHTML= elephantAmount;
+document.getElementById("bagQuantity").innerHTML= bagAmount;
+document.getElementById("jewelryQuantity").innerHTML= jewelryAmount;
+document.getElementById("teaQuantity").innerHTML= teaAmount;
+//calculate total orders
+totalAmount = elephantAmount + bagAmount + jewelryAmount+teaAmount;
+//calculate total price
+totalValue = (elephantAmount* ( elephantPrice ))+(bagAmount*( bagPrice))+(jewelryAmount*(jewelryPrice))+(teaAmount*(teaPrice));
+//calulate delivary fee
+giftValue =  ( giftOption * giftPrice );
+//claculate and shows total price of individual products
+document.getElementById("elephantTotal").innerHTML = elephantAmount * elephantPrice ;
+document.getElementById("bagTotal").innerHTML = bagAmount * bagPrice;
+document.getElementById("jewelryTotal").innerHTML = jewelryAmount * jewelryPrice;
+document.getElementById("teaTotal").innerHTML = teaAmount * teaPrice;
+//shows the delivary fee
+document.getElementById("giftTotal").innerHTML = giftValue;
+//update the total price
+totalValue = totalValue + giftValue;
+//shows total price.
+document.getElementById("orderTotal").innerHTML = totalValue;}
+
+
+
+function placeMyOrder(formRef) {
+var checkout=document.getElementById("check");
+updateOrder(formRef);
+var orderMessage = "";
+var userName = document.getElementById("name").value;
+var userEmail = document.getElementById("email").value;
+var elephantText = "\n " + elephantAmount + " Elephant statues, ";
+var bagText = "\n " + bagAmount + " bags, ";
+var jewelryText = " and " + "\n " + jewelryAmount + " jewellry boxes";
+var teaText = " and " + "\n " + teaAmount + " tea boxes";
+
+//checks at least one item has been orded else provide a popup message.
+if ( ( elephantAmount+ bagAmount+ jewelryAmount+teaAmount == 0) ) {
+alert("Your order is empty. Please select items before submitting your order.");
+//checks whether username and email has been filled.
+} else if (userName == "") {alert("Please enter your name");
+} else if (userEmail == "") {alert("Please enter your email");
+} else {orderMessage = "Dear " + userName + ", \n\nYou have ordered " + totalAmount + " your order as follows: " + elephantText + bagText + jewelryText + teaText+".\n";
+if (giftOption == 1 ) {
+orderMessage += "you will be charged 200rupees for express delivary." ;
+} else { 
+orderMessage += "Your total bill is " + totalValue + "rupees.";
+} 
+orderMessage += " Your order will be with you shortly.";
+alert(orderMessage);
+//when user click placeorder button redirect user to checkoutform.
+checkout.style.display = "block";
+// Scroll to the checkout form
+checkout.scrollIntoView({ behavior: "smooth" });
+}
+}
+
+//get amount,username and email from the shopping cart and fill them in the checkout form.
+function showInput(formRef) {
+var checkname=  document.getElementById('fname');
+var checkemail=document.getElementById('email1');
+var checktotal=document.getElementById('amount');
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var total= totalValue;
+checkemail.value=email;
+checkname.value=name;
+checktotal.value=total;
+
+}
+
+//checkout form validation.
+function validate(){
+
+var checkaddress=document.getElementById("adr").value;
+var checkcity=document.getElementById("city").value;
+var checkstate=document.getElementById("state").value;
+var checkzip=document.getElementById("zip").value;
+var checkcname=document.getElementById("cname").value;
+var checkcnum=document.getElementById("ccnum").value;
+var checkmonth=document.getElementById("expmonth").value;
+var checkyear=document.getElementById("expyear").value;
+var checkcvv=document.getElementById("cvv").value;
+
+
+
+if(checkaddress==""){
+alert('please enter your address.');
+}
+else if(checkcity==""){alert('please enter your city.');
+}
+else if(checkstate==""){alert('please enter your state.');
+}
+else if(checkzip==""){alert('please enter your zip number.');
+}
+else if(checkcname==""){alert('please enter your name on card.');
+}
+else if(checkcnum==""){alert('please enter your cardnumber.');
+
+}
+else if(checkmonth==""){alert('please enter exp month of card.');
+}
+else if(checkyear==""){alert('please enter exp year of card.');
+}
+else if(checkcvv==""){
+alert('please enter cvv of your card.');
+}
+else{
+if ( checkcnum.toString().length != 8 ) {alert( "Invalid card number.Your card number should be 8 digits" );
+} 
+else if( checkcvv.toString().length != 3) {alert( "Invalid cvv. your cvv should be 3 digits" );
+} 
+else{
+alert("paymont successful!");
+}
+}
+
+}
+
+
+</script>
+</body>
+</html>
